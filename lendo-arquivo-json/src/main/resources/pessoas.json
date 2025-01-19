@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Davi",
+    "enderecos": [
+      {
+        "titulo": "Casa",
+        "cep": "77777-77",
+        "numero": 147,
+        "complemento": "Endereço teste casa"
+      },
+      {
+        "titulo": "Trabalho",
+        "cep": "88888-88",
+        "numero": 247,
+        "complemento": "Endereço teste trabalho"
+      }
+    ]
+  },
+  {
+    "nome": "Lucas",
+    "enderecos": [
+      {
+        "titulo": "Casa Principal",
+        "cep": "22222-22",
+        "numero": 347,
+        "complemento": "Endereço teste casa em brasilia"
+      },
+      {
+        "titulo": "Trabalho",
+        "cep": "44444-44",
+        "numero": 447,
+        "complemento": "Endereço teste trabalho"
+      },
+      {
+        "titulo": "Casa de veraneio",
+        "cep": "55555-55",
+        "numero": 747,
+        "complemento": "Endereço teste casa de verão"
+      }
+    ]
+  }
+]

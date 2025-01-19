@@ -1,0 +1,17 @@
+{
+  "nome": "Gustavo",
+  "enderecos": [
+    {
+      "titulo": "Casa",
+      "cep": "77777-77",
+      "numero": 147,
+      "complemento": "Endereço teste casa"
+    },
+    {
+      "titulo": "Trabalho",
+      "cep": "88888-88",
+      "numero": 247,
+      "complemento": "Endereço teste trabalho"
+    }
+  ]
+}

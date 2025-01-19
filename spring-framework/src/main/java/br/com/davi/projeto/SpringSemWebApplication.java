@@ -1,11 +1,13 @@
 package br.com.davi.projeto;
 
-import br.com.davi.projeto.model.DadosSerie;
-import br.com.davi.projeto.service.ApiConsumer;
-import br.com.davi.projeto.service.DataConverter;
+import br.com.davi.projeto.model.DadosTemporada;
+import br.com.davi.projeto.principal.Principal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class SpringSemWebApplication implements CommandLineRunner {
@@ -17,16 +19,8 @@ public class SpringSemWebApplication implements CommandLineRunner {
     //Para ter-se uma aplicação que usa commandline precisamos importar
     @Override
     public void run(String... args) throws Exception {
-        //Inferência de tipo -> var assume a instância(new)
-        var apiConsumer = new ApiConsumer();
+        Principal principal = new Principal();
+        principal.exibirMenu();
 
-        String json = apiConsumer.obterDados("https://www.omdbapi.com/?t=Matrix&apikey=c070cbb8");
-        System.out.println(json);
-
-//        json = apiConsumer.obterDados("https://coffee.alexflipnote.dev/W2lmm8tkypw_coffee.jpg");
-//        System.out.println(json);
-        DataConverter converter = new DataConverter();
-        DadosSerie dados = converter.obterDados(json, DadosSerie.class);
-        System.out.println(dados);
     }
 }
